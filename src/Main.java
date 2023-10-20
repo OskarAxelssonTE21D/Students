@@ -26,12 +26,12 @@ public class Main {
             students[i] = new Student(name, address);
 
             // Add course grades for the student
-            System.out.print("Enter the number of courses for student " + (i + 1) + ": ");
+            System.out.print("Enter the number of courses for student 1-3§" + (i + 1) + ": ");
             int numCourses = scanner.nextInt();
             scanner.nextLine(); // Consume the newline character
 
             for (int j = 0; j < numCourses; j++) {
-                System.out.print("Enter course name for course " + (j + 1) + ": ");
+                System.out.print("Enter students courses Math, English and " + (j + 1) + ": ");
                 String courseName = scanner.nextLine();
 
                 System.out.print("Enter grade for course from 1-5 " + courseName + ": ");
@@ -48,7 +48,7 @@ public class Main {
             System.out.println("Name: " + students[i].name);
             System.out.println("Address: " + students[i].getAddress());
             //System.out.println("Average Grade: " + students[i].getAverageGrade());
-            System.out.println("Courses and Grades:");
+            System.out.println("Courses, teachers and Grades:");
             for (int j = 0; j < students[i].getCourses().size(); j++) {
                 System.out.print(students[i].getCourses().get(j).name + ": ");
                 System.out.println(students[i].getCourses().get(j).getGrade());
