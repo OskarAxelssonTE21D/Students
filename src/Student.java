@@ -1,9 +1,11 @@
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 public class Student {
     public final String name;
     private String address;
     private ArrayList<Course> courses = new ArrayList();
+    private ArrayList<Integer> grades = new ArrayList();
 
     public Student(String name, String address) {
         this.name = name;
@@ -24,6 +26,22 @@ public class Student {
 
     public void setCourses(ArrayList<Course> courses) {
         this.courses = courses;
+    }
+
+    public void addCourse(Course course) {
+        this.courses.add(course);
+    }
+
+    public ArrayList<Integer> getGrades() {
+        return grades;
+    }
+
+    public void setGrades(ArrayList<Integer> grades) {
+        this.grades = grades;
+    }
+
+    public void addGrade(int grade) {
+        this.grades.add(grade);
     }
 
     /*public double getAverageGrade() {
