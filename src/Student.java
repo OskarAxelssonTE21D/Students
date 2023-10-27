@@ -43,15 +43,4 @@ public class Student {
     public void addGrade(int grade) {
         this.grades.add(grade);
     }
-
-    /*public double getAverageGrade() {
-        if (courses.size() == 0) {
-            return 0.0;
-        }
-        int sum = 0;
-        for (int i = 0; i < courses.size(); i++) {
-            sum += grades.get(i);
-        }
-        return (double) sum / courses.size();
-    }*/
 }
